@@ -5,6 +5,8 @@
   align-items: center;
   /* padding: 6rem; */
   min-height: 100vh;
+  color: white;
+  font-family: 'Gilroy', 'Times New Roman', Times, serif;
 }
 
 .description {
@@ -162,6 +164,12 @@
   height: 800px;
 }
 
+.menu ul li {
+  list-style: none;
+  display: inline-block;
+  margin-left: 10px;
+  font-size: 18px;
+}
 /* Enable hover only on non-touch devices */
 @media (hover: hover) and (pointer: fine) {
   .card:hover {
