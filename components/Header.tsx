@@ -6,6 +6,7 @@ import {
   SearchOutlined,
   ShoppingCartOutlined,
 } from "@ant-design/icons/lib/icons";
+import Link from "next/link";
 
 const Header = () => {
   return (
@@ -33,7 +34,9 @@ const Header = () => {
           <div className={styles.topEnd}>
             <Space>
               <SearchOutlined />
-              <ShoppingCartOutlined />
+              <Link href="/cart">
+                <ShoppingCartOutlined />
+              </Link>
             </Space>
           </div>
         </div>
@@ -45,7 +48,7 @@ const Header = () => {
             marginTop: 120,
           }}
         >
-          <div>
+          <div style={{ flex: 1 }}>
             <Space direction="vertical">
               <h1>Athenticate Home food in UK</h1>
               <p>

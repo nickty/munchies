@@ -18,14 +18,18 @@ const Body: React.FC = () => {
   };
   return (
     <>
-      <div>
+      <div style={{ marginTop: 120, color: "#000000" }}>
         <h3>Home Kitchen</h3>
-        <Radio.Group value={size} onChange={handleSizeChange}>
-          <Radio.Button value="large">Large</Radio.Button>
-          <Radio.Button value="default">Default</Radio.Button>
-          <Radio.Button value="small">Small</Radio.Button>
-        </Radio.Group>
-        <div>
+        <div style={{ marginTop: 16 }}>
+          <Radio.Group value={size} onChange={handleSizeChange}>
+            <Radio.Button value="large">All</Radio.Button>
+            <Radio.Button value="default">Button</Radio.Button>
+            <Radio.Button value="del">Free Delivery</Radio.Button>
+            <Radio.Button value="new">New</Radio.Button>
+            <Radio.Button value="coming">Coming</Radio.Button>
+          </Radio.Group>
+        </div>
+        <div style={{ margin: "30 0" }}>
           <DropdownSelection />
         </div>
         <div>
