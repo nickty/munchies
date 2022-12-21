@@ -22,8 +22,8 @@ export default function Home() {
       <main className={styles.main}>
         <Header />
         <Body />
-        <Blog />
-        <Contact />
+        {/* <Blog /> */}
+        {/* <Contact /> */}
       </main>
       <Footer />
     </>

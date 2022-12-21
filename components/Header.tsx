@@ -49,7 +49,7 @@ const Header = () => {
             marginTop: 120,
           }}
         >
-          <div style={{ flex: 1 }}>
+          <div>
             <Space direction="vertical">
               <h1 style={{ fontSize: 70 }}>Athenticate Home food in UK</h1>
               <p>

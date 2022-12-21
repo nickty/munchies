@@ -50,15 +50,15 @@ const Products: React.FC = () => {
   const dispatch = useDispatch();
   return (
     <List
-      // grid={{
-      //   gutter: 16,
-      //   xs: 1,
-      //   sm: 2,
-      //   md: 4,
-      //   lg: 4,
-      //   xl: 6,
-      //   xxl: 3,
-      // }}
+      grid={{
+        gutter: 16,
+        xs: 1,
+        sm: 2,
+        md: 4,
+        lg: 4,
+        xl: 6,
+        xxl: 3,
+      }}
       dataSource={data}
       renderItem={(item) => (
         <List.Item>
@@ -80,10 +80,7 @@ const Products: React.FC = () => {
               <h3>{item.name}</h3>
               <p>{item.price} TK</p>
             </div>
-            <Button
-              icon={<ShopFilled />}
-              onClick={() => dispatch(addToCart(item))}
-            >
+            <Button onClick={() => dispatch(addToCart(item))}>
               <Link href="/cart">Add to cart</Link>
             </Button>
           </Card>

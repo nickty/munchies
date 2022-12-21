@@ -19,25 +19,35 @@ const Body: React.FC = () => {
   return (
     <>
       <div style={{ marginTop: 120, color: "#000000" }}>
-        <h3>Home Kitchen</h3>
-        <div style={{ marginTop: 16 }}>
+        {/* <h3>Home Kitchen</h3> */}
+        {/* <div style={{ marginTop: 16 }}>
           <Radio.Group value={size} onChange={handleSizeChange}>
-            <Radio.Button value="large">All</Radio.Button>
-            <Radio.Button value="default">Button</Radio.Button>
-            <Radio.Button value="del">Free Delivery</Radio.Button>
-            <Radio.Button value="new">New</Radio.Button>
-            <Radio.Button value="coming">Coming</Radio.Button>
+            <Radio.Button value="large" style={{ padding: 19 }}>
+              All
+            </Radio.Button>
+            <Radio.Button value="default" style={{ padding: 19 }}>
+              Button
+            </Radio.Button>
+            <Radio.Button value="del" style={{ padding: 19 }}>
+              Free Delivery
+            </Radio.Button>
+            <Radio.Button value="new" style={{ padding: 19 }}>
+              New
+            </Radio.Button>
+            <Radio.Button value="coming" style={{ padding: 19 }}>
+              Coming
+            </Radio.Button>
           </Radio.Group>
         </div>
         <div style={{ margin: "30 0" }}>
           <DropdownSelection />
-        </div>
+        </div> */}
         <div>
           <Products />
         </div>
-        <div>
+        {/* <div>
           <Button icon={<PlusOutlined />}>Load More...</Button>
-        </div>
+        </div> */}
       </div>
     </>
   );
