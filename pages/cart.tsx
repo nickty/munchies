@@ -7,6 +7,7 @@ import {
   decrementQuantity,
   removeFromCart,
 } from "../redux/cart.slice";
+import Link from "next/link";
 
 const CartPage = () => {
   // Extracting cart state from redux store
@@ -25,7 +26,13 @@ const CartPage = () => {
   return (
     <div className={styles.container}>
       {cart.length === 0 ? (
-        <h1>Your Cart is Empty!</h1>
+        <>
+          <h1>Your Cart is Empty!</h1>
+          <br />
+          <button>
+            <Link href="/">Go to home</Link>
+          </button>
+        </>
       ) : (
         <>
           <div className={styles.header}>

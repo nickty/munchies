@@ -3,6 +3,7 @@ import { Button, Card, List } from "antd";
 import { ShopFilled, ShoppingFilled } from "@ant-design/icons";
 import { useDispatch } from "react-redux";
 import { addToCart } from "../redux/cart.slice";
+import Link from "next/link";
 
 const data = [
   {
@@ -83,7 +84,7 @@ const Products: React.FC = () => {
               icon={<ShopFilled />}
               onClick={() => dispatch(addToCart(item))}
             >
-              Add to cart
+              <Link href="/cart">Add to cart</Link>
             </Button>
           </Card>
         </List.Item>

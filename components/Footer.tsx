@@ -1,6 +1,11 @@
 import React from "react";
 import { Card, Col, Image, Row, Space } from "antd";
-import { SearchOutlined, ShoppingCartOutlined } from "@ant-design/icons";
+import {
+  FacebookFilled,
+  InstagramFilled,
+  SearchOutlined,
+  ShoppingCartOutlined,
+} from "@ant-design/icons";
 import Link from "next/link";
 import styles from "../styles/Home.module.css";
 
@@ -12,10 +17,11 @@ const Footer: React.FC = () => (
           display: "flex",
           justifyContent: "space-between",
           alignItems: "center",
+          marginBottom: "34px",
         }}
       >
         <div className={styles.logo}>
-          <Image src="/logo.png" width="128" height="65" />
+          <Image src="/WHAT2EAT.png" width="128" height="65" />
         </div>
         <div className={styles.menu}>
           <ul>
@@ -28,13 +34,15 @@ const Footer: React.FC = () => (
         </div>
         <div className={styles.topEnd}>
           <Space>
-            <SearchOutlined />
-            <Link href="/cart">
-              <ShoppingCartOutlined />
-            </Link>
+            <FacebookFilled />
+            <InstagramFilled />
           </Space>
         </div>
       </div>
+      <hr />
+      <p style={{ textAlign: "center", marginTop: 16 }}>
+        Copyright @2021 What2Eat
+      </p>
     </div>
   </div>
 );

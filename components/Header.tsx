@@ -34,6 +34,7 @@ const Header = () => {
           <div className={styles.topEnd}>
             <Space>
               <SearchOutlined />
+
               <Link href="/cart">
                 <ShoppingCartOutlined />
               </Link>
@@ -50,14 +51,36 @@ const Header = () => {
         >
           <div style={{ flex: 1 }}>
             <Space direction="vertical">
-              <h1>Athenticate Home food in UK</h1>
+              <h1 style={{ fontSize: 70 }}>Athenticate Home food in UK</h1>
               <p>
-                What2Eat is a courier service in which authentic home cook food
+                What2Eat is a courier service in which authentic home cook food{" "}
+                <br />
                 is delivered to a customer.
               </p>
-              <div>
-                <input type="text" />
-                <button>Search</button>
+              <div style={{ marginTop: 40 }}>
+                <input
+                  type="text"
+                  placeholder="Search food type you love"
+                  style={{
+                    padding: 19,
+                    borderTopLeftRadius: 10,
+                    borderBottomLeftRadius: 10,
+                    border: "none",
+                    width: 398,
+                  }}
+                />
+                <button
+                  style={{
+                    padding: 19,
+                    borderTopRightRadius: 10,
+                    borderBottomRightRadius: 10,
+                    border: "none",
+                    backgroundColor: "#F3BA00",
+                    color: "white",
+                  }}
+                >
+                  Search
+                </button>
               </div>
             </Space>
           </div>
