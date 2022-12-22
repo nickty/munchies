@@ -20,7 +20,7 @@ const Header = () => {
           }}
         >
           <div className={styles.logo}>
-            <Image src="/logo.png" width="128" height="65" />
+            <Image src="/logo.png" width="128" height="65" alt="logo" />
           </div>
           <div className={styles.menu}>
             <ul>
@@ -85,7 +85,7 @@ const Header = () => {
             </Space>
           </div>
           <div>
-            <Image src="/cuate.png" width="520" height="435" />
+            <Image src="/cuate.png" width="520" height="435" alt="cart" />
           </div>
         </div>
       </div>
