@@ -1,7 +1,7 @@
-import { createSlice } from '@reduxjs/toolkit';
+import { createSlice } from "@reduxjs/toolkit";
 
 const cartSlice = createSlice({
-  name: 'cart',
+  name: "cart",
   initialState: [],
   reducers: {
     addToCart: (state, action) => {
@@ -16,12 +16,9 @@ const cartSlice = createSlice({
       const item = state.find((item) => item.id === action.payload);
 
       if (item) {
-        console.log(action)
-        const qtyCheck = state.find((item) => item.quantity_available > action.payload);
-        if(qtyCheck){
-          item.quantity++
+        if (item.quantity < item.quantity_available) {
+          item.quantity++;
         }
-        
       } else {
         state.items.push(payload);
       }
