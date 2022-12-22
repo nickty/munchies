@@ -37,6 +37,7 @@ const CartPage = () => {
         <>
           <div className={styles.header}>
             {/* <div>Image</div> */}
+
             <div>Product</div>
             <div>Price</div>
             <div>Quantity</div>
@@ -44,7 +45,7 @@ const CartPage = () => {
             <div>Total Price</div>
           </div>
           {cart.map((item) => (
-            <div className={styles.body}>
+            <div key={item.id} className={styles.body}>
               {/* <div className={styles.image}>
                 <Image src={item.image} height="90" width="65" />
               </div> */}
@@ -66,6 +67,11 @@ const CartPage = () => {
             </div>
           ))}
           <h2>Grand Total: $ {getTotalPrice()}</h2>
+          <br />
+          <br />
+          <button>
+            <Link href="/">Go to home</Link>
+          </button>
         </>
       )}
     </div>

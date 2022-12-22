@@ -19,7 +19,6 @@ const Body: React.FC = () => {
   return (
     <>
       <div style={{ marginTop: 120, color: "#000000" }}>
-        {/* <h3>Home Kitchen</h3> */}
         {/* <div style={{ marginTop: 16 }}>
           <Radio.Group value={size} onChange={handleSizeChange}>
             <Radio.Button value="large" style={{ padding: 19 }}>
