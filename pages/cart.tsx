@@ -11,7 +11,7 @@ import Link from "next/link";
 
 const CartPage = () => {
   // Extracting cart state from redux store
-  const cart = useSelector((state: Number) => state.cart);
+  const cart = useSelector((state) => state.cart);
 
   // Reference to the dispatch function from redux store
   const dispatch = useDispatch();
